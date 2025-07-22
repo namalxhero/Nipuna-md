@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | KAVI-MD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu icon (≡) -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <!-- Navigation Menu -->
+  <div id="nav-menu" class="nav-menu">
+    <ul>
+      <li><a href="#">🏠 Home</a></li>
+      <li><a href="#">🧺 Ware</a></li>
+      <li><a href="#">📋 Menu</a></li>
+      <li>
+        <label for="imageUpload" class="image-upload-label">🖼️ Add Image</label>
+        <input type="file" id="imageUpload" accept="image/*" onchange="displayImage(this)">
+      </li>
+    </ul>
+  </div>
+
+  <!-- Image Preview Section -->
+  <div id="imagePreview"></div>
+
+  <!-- Login Box -->
+  <div class="login-box">
+    <h2><marquee>KAVI-MD</marquee></h2>
+    <form onsubmit="checkLogin(event)">
+      <input type="text" id="username" placeholder="Username" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <!-- Business Page -->
+  <div class="business-page">
+    <div class="business-header">🎉 Welcome KAVI-MD 🎉</div>
+
+    <div class="card">
+      <h3>අපි ගැන</h3>
+      <p>අපගේ සේවාවන් ඔබට විශ්වාසය සහිතව ලබාදීමට කැපවෙමු.</p>
+    </div>
+
+    <div class="card">
+      <h3>WhatsApp Bot</h3>
+      <p>👇 පහත ලින්ක් එක ක්ලික් කරන්න:</p>
+      <a class="kavi-link" href="https://kavi-x-bot-b2093185b81d.herokuapp.com/" target="_blank">
+        👉 KAVI-X BOT වෙත යන්න
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>සම්බන්ධ වන්න</h3>
+      <p>📞 දුරකථන:+94 70 212 8378</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
